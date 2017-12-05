@@ -1,0 +1,387 @@
+@charset "utf-8";
+.nyx-page{
+    padding-top: 64px;
+    margin: 0 auto;
+}
+.nyx-context{
+    h1{
+        margin: 1rem;
+        font-size:24px;
+        margin-top: 2rem;
+        line-height: 2;
+    }
+    h2{
+        margin: 1rem;
+        font-size:18px;
+        line-height: 1.5;
+        margin-top: 2rem;
+    }
+    h3{
+        margin: 1rem;
+        font-size: 16px;
+        line-height: 2;
+        margin-top: 2rem;
+    }
+    h4{
+        margin: 0;
+        font-size: 14px;
+        line-height: 2;
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+    p{
+        margin: 0rem;
+        font-size:14px;
+        line-height: 2;
+        margin-left: 2rem;
+    }
+}
+.nyx-tips{
+    width: 800px;
+    color: $red500;
+    margin: 2rem 1rem 1rem;
+}
+// .nyx-must-content:after{
+//     content: "*必填";
+//     position: absolute;
+//     right: 20px;
+//     font-size: 80%;
+//     top: 23px;
+//     color:$red300;
+// }
+
+#companyid{
+    height: 150px;
+    position: relative;
+}
+.nyx-head-name{
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 14px;
+    font-weight: 600;
+    font-family: simsun;
+    padding: 1rem 0rem 0.25rem;
+    margin: 0rem 1rem;
+    border-bottom: 1px solid $grey400;
+}
+.nyx-arranged-per,.nyx-enrolled-per{
+    height: 10px; 
+    display: block;
+    left: 1rem;
+    position: absolute;
+}
+.nyx-arranged-per{
+    background: #ddd;
+    width: 288px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.3) inset;
+}
+.nyx-enrolled-per{
+    background: $blue;
+    min-width: 2px;
+}
+.nyx-arranger-enrolled-title{
+    margin: 1rem 1rem 0.5rem;
+    font-size: 12px;
+}
+.nyx-area-paper{
+    min-height:350px;
+    margin-top: 1rem;
+}
+.nyx-paper{
+    float: left;
+    width: 320px;
+    margin: 1rem;
+    .nyx-paper-header{
+        padding-left:0 !important;
+    }
+}
+.nyx-list-paper{
+    height: 200px;
+    padding-top: 0.2rem;
+    overflow-y: auto;
+}
+.nyx-list-paper-change{
+    min-height: 400px;
+    padding-top: 0.1rem;
+}
+.nyx-card {
+    width: 100%;
+    font-size:12px;
+   // border-bottom: 2px $blue solid;
+    padding:0.3rem 0.5rem 0 0.7rem;
+    &>div{
+        padding:0 1rem;
+    }
+  
+   
+    .nyx-card-body{
+        width: 65%;
+        float: left;
+        position: relative;
+        //width: 80%;
+        margin-left: 0.5rem;
+        padding: 0rem 0rem 0rem 1rem;
+        border-left: 1px solid $grey400;
+        p{
+            font-size:12px !important;
+        }
+    }
+    .nyx-card:last-child(nyx-card-body){
+        border: none;
+    }
+    .nyx-card-round-ing{
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        top: -6px;
+        left: -6px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 7px 0 $blue;
+        background-color: $blue;
+    }
+    .nyx-card-action{
+        float: right;
+        margin: 0;
+        margin-right: 0.4rem;
+        padding: 0;
+    }
+    .nyx-card-unarrange-button{
+
+        color: $white;
+        font-size: 12px;
+        line-height: 24px;
+        padding: 0.1rem 0.3rem;
+        border-radius: 3px;
+        border: none;
+        background-color: $blue;
+        &:hover{
+            background-color: $blue900;
+        }
+    }
+    .nyx-card-button{
+        display: inline;
+        float:right ;
+        margin-bottom: 0.3rem;
+        color: $white;
+        font-size: 12px;
+        line-height: 24px;
+        padding: 0.1rem 0.3rem;
+        border-radius: 3px;
+        border: none;
+        background-color: $blue;
+        &:hover{
+            background-color: $blue900;}
+    };
+    .nyx-card-action>{
+        height: 33px;
+    }
+    .nyx-oneline{
+
+        display: inline-block;
+       // float: left;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;    
+    }
+    .nyx-card-name{
+      
+        width: 4em;
+        color: $grey900;
+        @extend .nyx-oneline;
+    }
+    .nyx-card-name-lg{
+      
+        width: 8em;
+        color: $grey900;
+        @extend .nyx-oneline;
+    }
+    .nyx-card-first-info{
+        width: 220px;
+        color: #212121;
+        margin-right: 2rem;
+        color: $grey900;
+        float: left;
+    }
+    .nyx-card-second-info{
+        color: $grey500;
+        margin-bottom: 0.5rem;
+        float: left;
+    }
+    .nyx-card-key{
+        //width:8rem;
+        @extend .nyx-oneline;
+    }
+    .nyx-card-value{
+        width:4.5rem;
+        @extend .nyx-oneline;
+        &.nyx-card-value-sm{
+            width: 4rem;
+        }
+    }
+}
+.nyx-card-list{
+    width: 100%;
+}
+.nyx-info{
+    .nyx-info-selectshow>div{
+        @extend .nyx-oneline;
+    }
+    .nyx-info-select-title{
+        width:10em;
+        flex:initial;
+    }
+}
+.myx-info-title{
+    border-left: 2px solid $blue;
+    color: $blue;
+    font-weight: 600;
+    line-height: 2rem;
+    padding-left: 1rem;
+
+}
+.nyx-form{
+    width: 100%;
+    padding: 2rem 2rem 5rem;
+    color: rgba(0, 0, 0, 0.54);
+    position: relative;
+    button {
+        border-radius: 50%;
+        height: 64px;
+        width: 64px;
+        position: absolute;
+        float: right;
+        right: 0px;
+        top:0px;
+        margin-right: 32px;
+        margin-top: -32px;
+        padding: 0;
+        min-width: initial;
+        background-color: $blue;
+        &:hover{
+            background-color: $blue900;
+
+        }
+        
+    }
+    
+    .nyx-form-div{
+        width: 50%;
+        margin: 0.5rem 0rem;
+        display: inline-block;
+    div{
+        width: 98%;
+    }
+    }
+    
+    .nyx-form-div-middle{
+        width: 30%;
+        display: inline-block;
+    div{
+        width: 95%;
+    }
+    }
+    .nyx-info-select-div{
+        width: 50%;
+        margin: 0.5rem 0rem;
+        float: right
+    }
+    .nyx-info-select,.nyx-info-select-lg{
+        width: 49%;
+        margin-right: 1%;
+        margin-top: 0.75rem;
+        border: none;
+        color: rgba(0, 0, 0, 0.54);
+        outline: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.54);
+    }
+    .nyx-info-select-lg{
+        width: 98%;
+    }
+    .nyx-info-select-label{
+        margin: 0;
+        font-size: 12px;
+        width: 50%;
+        display: inline-block;
+    
+    }
+    
+
+    
+    .nyx-info-select-middle{
+        width: 30%;
+        margin-right: 1%;
+        border: none;
+        color: rgba(0, 0, 0, 0.54);
+        outline: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.54);
+    }
+   
+}
+
+.nyx-remark{
+    color: rgba(0, 0, 0, 0.8);
+    p{
+        margin-top: -0.5rem;
+        font-size: 14px;
+       }
+}
+.nyx-card-class{
+    margin: 2rem 3rem 0rem 3rem;
+    border-bottom: 1px solid $grey400;
+    font-size: 12px;
+    .nyx-clazz-head{
+        float: left;
+        margin-right:1rem;
+        line-height: 40px;
+    }   
+}
+.nyx-card-class:hover{
+    border-bottom:1px solid $blue;
+}
+.nyx-clazz-key{
+    text-align: center; 
+    padding-top: -1rem;
+    position: relative;
+    top:-0.7rem; 
+  }
+.nyx-info-listitem{
+    font-size: 14px !important;
+    h3{
+    font-size: 14px !important;
+    }
+}
+.nyx-info-listitem-hover:hover{
+    background-color: rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}
+
+.nyx-info-span{
+    width: 10em;
+    display: block;
+    float: left;
+}
+.nyx-info-line-height{
+    line-height: 45px;
+    padding-left:16px; 
+}
+.nyx-flexible{
+    color: $blue;
+    float: right;
+    line-height: 1.5rem;
+}
+@media only screen and (max-width:960px ){
+    .nyx-form{
+        .nyx-form-div{
+           width: 100%;
+            display: inline-block;
+        div{
+            width: 98%;
+        }
+        }
+       .nyx-info-select,.nyx-info-select-label{
+            width: 100%;
+        }
+        .nyx-info-select-div{
+            width: 100%;
+        }
+    } 
+}

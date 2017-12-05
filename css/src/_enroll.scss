@@ -1,0 +1,83 @@
+.nyx-paper-header-btn{
+    float: right;
+    position: relative;
+    bottom: -28px;
+}
+.nyx-enroller-paper{
+    width: 800px;
+    float: none;
+}
+.nyx-card-enrroll-button{
+    color: $white;
+    font-size: 12px;
+    line-height: 24px;
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+    border: none;
+    background-color: $blue;
+    &:hover{
+        background-color: $blue900;
+    }
+}
+.nyx-card-enrroll-select-label-lg{
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 10px;
+}
+.nyx-enrolled-change-drawer{
+    margin: 20px;
+    width: 800px;
+    float: left;
+    box-shadow: none;
+    font-size: 14px;
+    
+}
+
+.nyx-enrolled-change-title{
+    color: $blue;
+    font-size: 18px;
+}
+.nyx-card-enrroll-select-lg,.nyx-card-enrroll-select-lg-dashed{
+    width: 100%;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+   //margin: 0 0 0.8rem 0;
+    border: none;
+    color: rgba(0, 0, 0, 0.54);
+    outline: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.38);
+}
+.nyx-card-enrroll-select-lg-dashed{
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.38);
+}
+.nyx-card-enrroll-button-sm{
+    color: #2196F3;
+    display: inline-block;
+    line-height: 18px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    padding: 5px;
+    vertical-align: middle;
+    text-align: center;
+    border: 1px #F5F5F5 solid;
+    &:hover {
+  background: #F5F5F5;
+  border: 1px #90CAF9 solid;}
+}
+.nyx-enroller-list{
+    width: 384px;
+}
+@media only screen and (max-width:800px ){
+    .nyx-enroller-paper{
+        width: 320px;
+    }
+    .nyx-enroller-list{
+        width: 320px;
+    } 
+    .nyx-enrolled-change-drawer{
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+}
+

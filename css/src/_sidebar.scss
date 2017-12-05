@@ -1,0 +1,37 @@
+.nyx-sidebar{
+    a{
+        line-height: 2em;
+        border-right:$blue 5px solid;
+        margin-bottom:2px; 
+        &:hover{
+            border-right-color:$blue900;
+            background-color:$blue;
+            color: #fff; 
+        }
+        transition: color .1;
+    }
+    .nyx_instruction_pdf_big{
+        width: 148px;
+    }
+    .nyx_instruction_pdf{
+        color: #ffffff;
+        padding: 0;
+        width: 50%;
+        float: left;
+        border: 1px solid #ffffff;
+        text-align: center;
+        background-color: $grey400;
+        &:hover{
+            background-color: $grey600;
+        }
+    }
+    .nyx_instruction_p{
+        font-size: 10px;
+        margin: 0;
+        line-height: 12px;
+        padding: 0;
+        top: -7px;
+        position: relative;
+    }
+    @extend .nyx-z8;
+}
